@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="Eng">
+    <head>
+        <title>Section NaatuNaatus</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="venky">
+<div class="karthi" id="sectonNaatuNaatu">
+    <img src="https://is2-ssl.mzstatic.com/image/thumb/Music116/v4/13/40/6b/13406bb2-42fe-0966-5cd1-38b879f06949/8903431853592_cover.jpg/1200x1200bf-60.jpg" alt="Naatu Naatu" class="inimage" id="image">
+    <p>Naatu Naatu</p>
+    <audio controls id="audio">
+        <source src="[iSongs.info] 05 - Naatu Naatu.mp3" type="audio/mpeg">
+    </audio>
+</div>
+<script>
+    var audio = document.getElementById("audio");
+    var image = document.getElementById("image");
+
+    audio.addEventListener("play", function() {
+        image.classList.add("rotate");
+    });
+
+    audio.addEventListener("pause", function() {
+        image.classList.remove("rotate");
+    });
+</script>
+    </body>
+</html>  

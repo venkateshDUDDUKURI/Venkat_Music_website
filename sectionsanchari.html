@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="Eng">
+    <head>
+        <title>Section Sanchaari</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="venky">
+        <div class="karthi" id="sectionsanchari">
+            <img src="https://www.mirchi9.com/wp-content/uploads/2021/12/Sanchari-Song-Radhe-Shyam.jpg" alt="sanchari" class="inimage" id="image">
+            <p>Sanchari</p>
+            <audio controls id="audio">
+                <source src="[iSongs.info] 03 - Sanchari.mp3" type="audio/mpeg">
+            </audio>
+        </div> 
+        <script>
+            var audio = document.getElementById("audio");
+            var image = document.getElementById("image");
+    
+            audio.addEventListener("play", function() {
+                image.classList.add("rotate");
+            });
+    
+            audio.addEventListener("pause", function() {
+                image.classList.remove("rotate");
+            });
+        </script>
+    </body>
+</html>

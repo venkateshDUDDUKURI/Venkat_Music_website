@@ -1,0 +1,137 @@
+.description{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    padding: 150px;
+    margin:auto;
+    border-radius: 2px solid black;
+    background: url('http://wallpapercave.com/wp/06TYEbJ.jpg');
+    background: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3px;
+    
+}
+.bottom-section {
+    background-color: #57595b;
+    padding: 15px;
+    margin-top: 3px;
+}
+
+.content{
+    background-color: white;
+    width: 170px;
+    border-radius: 9px;
+    padding: 16px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 2px 3px 5px #292929;
+    transform-style: preserve-3d;
+    transition: all 0.3s ease-in-out;
+}
+.image{
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    filter: drop-shadow(8px 8px 2px);
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+}
+.image:hover {
+   height: 160px;
+   width: 160px;
+   cursor: pointer;
+}
+
+.sandhi{
+    color: #323f4b;
+    font-family: "Roboto";
+    font-weight: bold;
+    padding: 10px;
+    font-size: 15px;
+}
+.cmrtc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.inimage{
+    align-items: center;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    height: 420px;
+    width: 420px;
+    padding: 20px;
+    box-shadow: 0 10px 60px rgba(255,26, 26,0.22);
+    margin-bottom: 20px;
+}
+.karthi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px;
+    box-sizing: border-box;
+    box-shadow: #292929;
+    border-radius: 10px solid black;
+}
+.karthi p{
+    display: flex;
+    justify-content: center;
+    color: floralwhite;
+
+}
+.link{
+    color: black;
+    text-decoration: none;
+}
+.venky{
+    background: var(--bg01);
+}
+:root{
+    --bg01: linear-gradient(180deg,
+    #22262A 0%,
+    #181A1d 100%);
+}
+.rotate {
+    animation: spin 6s linear infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@media (max-width: 600px) {
+    .description{
+        background-size: cover;
+        font-size: 20px;
+        padding: 100px;
+    }
+    .cmrtc{
+        display:flex;
+        flex-direction: column;
+        align-items : center;
+    }
+
+}
+
+/* Media query for screens between 600px and 900px wide */
+@media (min-width: 600px) and (max-width: 900px) {
+    body {
+        font-size: 18px;
+    }
+    .description{
+        padding: 100px;
+        font-size: 25px;
+    }
+}
+
+/* Media query for screens larger than 1200px wide */
+@media (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+}
+
